@@ -1,18 +1,22 @@
 {
   "name": "fa5-webpack4-demo",
   "version": "1.0.0",
-  "description": "Demonstrate Webpack 4 configuration with Font Awesome 5.1",
+  "description": "Demonstrate Webpack 4 configuration with Font Awesome 5.1 and greater",
+  "repository": "https://github.com/mlwilkerson/fa5-webpack4-demo",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack --progress --mode production"
   },
   "author": "Mike Wilkerson <mwilkerson@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.0-14",
-    "@fortawesome/free-brands-svg-icons": "^5.1.0-11",
-    "@fortawesome/free-solid-svg-icons": "^5.1.0-11",
-    "webpack": "^4.12.0",
-    "webpack-cli": "^3.0.8"
+    "@fortawesome/fontawesome-svg-core": "^1.2.15",
+    "@fortawesome/free-brands-svg-icons": "^5.7.2",
+    "@fortawesome/free-solid-svg-icons": "^5.7.2"
+  },
+  "devDependencies": {
+    "uglifyjs-webpack-plugin": "^2.1.2",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0"
   }
 }
